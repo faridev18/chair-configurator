@@ -10,18 +10,20 @@ import {
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import Chair from "./Chair";
-import Shoe from "./Shoe";
+// import Shoe from "./Shoe";
 
 const Experience = () => {
   return (
     <>
+    <directionalLight position={[3.3, 1.0, 4.4]} intensity={4} />
+    <ambientLight intensity={0.1} />
       <PresentationControls
-        speed={1.5}
+        speed={3}
         global
         polar={[-0.1, Math.PI / 4]}
         rotation={[Math.PI / 8, Math.PI / 4, 0]}
       >
-        <Stage environment="city" intensity={0.6} castShadow={false}>
+        <Stage environment="" intensity={0.6} castShadow={false}>
           <Chair scale={1} />
         </Stage>
         <mesh rotation={[-Math.PI / 2, 0, 0]}>

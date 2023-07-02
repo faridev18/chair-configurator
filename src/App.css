@@ -15,13 +15,14 @@
 .configurator {
   position: fixed;
   right: 24px;
-  bottom: 0vh;
+  top: 0vh;
   width: 360px;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 
 .configurator__section__title {
   text-transform: uppercase;
